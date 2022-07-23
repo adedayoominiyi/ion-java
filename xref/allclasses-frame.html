@@ -40,6 +40,7 @@
                                 <li><a href="com/amazon/ion/BufferConfiguration.html#BufferConfiguration.DataHandler" target="classFrame">BufferConfiguration.DataHandler</a></li>
                                 <li><a href="com/amazon/ion/BufferConfiguration.html#BufferConfiguration.OversizedValueHandler" target="classFrame">BufferConfiguration.OversizedValueHandler</a></li>
                                 <li><a href="com/amazon/ion/impl/ByteBuffer.html#ByteBuffer" target="classFrame">ByteBuffer</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/ByteBufferPool.html#ByteBufferPool" target="classFrame">ByteBufferPool</a></li>
                                 <li><a href="com/amazon/ion/impl/ByteReader.html#ByteReader" target="classFrame">ByteReader</a></li>
                                 <li><a href="com/amazon/ion/impl/ByteWriter.html#ByteWriter" target="classFrame">ByteWriter</a></li>
                                 <li><a href="com/amazon/ion/ContainedValueException.html#ContainedValueException" target="classFrame">ContainedValueException</a></li>
@@ -56,6 +57,8 @@
                                 <li><a href="com/amazon/ion/facet/Faceted.html#Faceted" target="classFrame">Faceted</a></li>
                                 <li><a href="com/amazon/ion/facet/Facets.html#Facets" target="classFrame">Facets</a></li>
                                 <li><a href="com/amazon/ion/util/GzipOrRawInputStream.html#GzipOrRawInputStream" target="classFrame">GzipOrRawInputStream</a></li>
+                                <li><a href="com/amazon/ion/impl/ImportLocation.html#ImportLocation" target="classFrame">ImportLocation</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/IntList.html#IntList" target="classFrame">IntList</a></li>
                                 <li><a href="com/amazon/ion/IntegerSize.html#IntegerSize" target="classFrame">IntegerSize</a></li>
                                 <li><a href="com/amazon/ion/InvalidSystemSymbolException.html#InvalidSystemSymbolException" target="classFrame">InvalidSystemSymbolException</a></li>
                                 <li><a href="com/amazon/ion/impl/IonBinary.html#IonBinary" target="classFrame">IonBinary</a></li>
@@ -130,7 +133,6 @@
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental" target="classFrame">IonReaderBinaryIncremental</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental.AnnotationIterator" target="classFrame">IonReaderBinaryIncremental.AnnotationIterator</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental.ContainerInfo" target="classFrame">IonReaderBinaryIncremental.ContainerInfo</a></li>
-                                <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental.ImportLocation" target="classFrame">IonReaderBinaryIncremental.ImportLocation</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental.LocalSymbolTableSnapshot" target="classFrame">IonReaderBinaryIncremental.LocalSymbolTableSnapshot</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental.SingleUseAnnotationIterator" target="classFrame">IonReaderBinaryIncremental.SingleUseAnnotationIterator</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryIncremental.html#IonReaderBinaryIncremental.SymbolTokenImpl" target="classFrame">IonReaderBinaryIncremental.SymbolTokenImpl</a></li>
@@ -146,9 +148,9 @@
                                 <li><a href="com/amazon/ion/impl/IonReaderBinaryUserX.html#IonReaderBinaryUserX.SpanProviderFacet" target="classFrame">IonReaderBinaryUserX.SpanProviderFacet</a></li>
                                 <li><a href="com/amazon/ion/system/IonReaderBuilder.html#IonReaderBuilder" target="classFrame">IonReaderBuilder</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer" target="classFrame">IonReaderLookaheadBuffer</a></li>
+                                <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer.Marker" target="classFrame">IonReaderLookaheadBuffer.Marker</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer.ReadTypeIdResult" target="classFrame">IonReaderLookaheadBuffer.ReadTypeIdResult</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer.State" target="classFrame">IonReaderLookaheadBuffer.State</a></li>
-                                <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer.SymbolTableMarker" target="classFrame">IonReaderLookaheadBuffer.SymbolTableMarker</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer.VarUInt" target="classFrame">IonReaderLookaheadBuffer.VarUInt</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderLookaheadBuffer.html#IonReaderLookaheadBuffer.VarUInt.Location" target="classFrame">IonReaderLookaheadBuffer.VarUInt.Location</a></li>
                                 <li><a href="com/amazon/ion/impl/IonReaderTextRawTokensX.html#IonReaderTextRawTokensX" target="classFrame">IonReaderTextRawTokensX</a></li>
@@ -245,6 +247,10 @@
                                 <li><a href="com/amazon/ion/NullValueException.html#NullValueException" target="classFrame">NullValueException</a></li>
                                 <li><a href="com/amazon/ion/OffsetSpan.html#OffsetSpan" target="classFrame">OffsetSpan</a></li>
                                 <li><a href="com/amazon/ion/impl/OutputStreamFastAppendable.html#OutputStreamFastAppendable" target="classFrame">OutputStreamFastAppendable</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/Pool.html#Pool" target="classFrame">Pool</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/Pool.html#Pool.Allocator" target="classFrame">Pool.Allocator</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/Poolable.html#Poolable" target="classFrame">Poolable</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/PoolableByteBuffer.html#PoolableByteBuffer" target="classFrame">PoolableByteBuffer</a></li>
                                 <li><a href="com/amazon/ion/impl/bin/PooledBlockAllocatorProvider.html#PooledBlockAllocatorProvider" target="classFrame">PooledBlockAllocatorProvider</a></li>
                                 <li><a href="com/amazon/ion/impl/bin/PooledBlockAllocatorProvider.html#PooledBlockAllocatorProvider.PooledBlockAllocator" target="classFrame">PooledBlockAllocatorProvider.PooledBlockAllocator</a></li>
                                 <li><a href="com/amazon/ion/apps/PrintApp.html#PrintApp" target="classFrame">PrintApp</a></li>
@@ -308,6 +314,8 @@
                                 <li><a href="com/amazon/ion/UnknownSymbolException.html#UnknownSymbolException" target="classFrame">UnknownSymbolException</a></li>
                                 <li><a href="com/amazon/ion/facet/UnsupportedFacetException.html#UnsupportedFacetException" target="classFrame">UnsupportedFacetException</a></li>
                                 <li><a href="com/amazon/ion/UnsupportedIonVersionException.html#UnsupportedIonVersionException" target="classFrame">UnsupportedIonVersionException</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/Utf8StringDecoder.html#Utf8StringDecoder" target="classFrame">Utf8StringDecoder</a></li>
+                                <li><a href="com/amazon/ion/impl/bin/utf8/Utf8StringDecoderPool.html#Utf8StringDecoderPool" target="classFrame">Utf8StringDecoderPool</a></li>
                                 <li><a href="com/amazon/ion/impl/bin/utf8/Utf8StringEncoder.html#Utf8StringEncoder" target="classFrame">Utf8StringEncoder</a></li>
                                 <li><a href="com/amazon/ion/impl/bin/utf8/Utf8StringEncoder.html#Utf8StringEncoder.Result" target="classFrame">Utf8StringEncoder.Result</a></li>
                                 <li><a href="com/amazon/ion/impl/bin/utf8/Utf8StringEncoderPool.html#Utf8StringEncoderPool" target="classFrame">Utf8StringEncoderPool</a></li>
